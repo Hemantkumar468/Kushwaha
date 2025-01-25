@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemant Kushwaha - Frontend Developer</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and general styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(45deg, #3498db, #2C3E50);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            animation: fadeInHeader 1s ease-out forwards;
+        }
+
+        @keyframes fadeInHeader {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header p {
+            font-size: 1.2rem;
+            animation: fadeInHeader 1s ease-out 0.3s forwards;
+        }
+
+        /* Main container */
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        /* Image section */
+        .image-container {
+            flex: 1;
+            text-align: center;
+        }
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 4px solid #3498db;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.1);
+        }
+
+        /* Main content */
+        .main-content {
+            flex: 2;
+        }
+
+        /* Section title */
+        .section-title {
+            font-size: 2rem;
+            color: #34495E;
+            margin-bottom: 1rem;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        /* Profile summary */
+        .profile-summary, .key-skills, .portfolio, .address {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Skills, portfolio, and other content */
+        .skills-item {
+            background-color: #ecf0f1;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .skills-item:hover {
+            transform: translateY(-5px);
+            background-color: #3498db;
+            color: white;
+        }
+
+        /* Portfolio links */
+        .portfolio a {
+            color: #3498db;
+            text-decoration: none;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            transition: color 0.3s, border-color 0.3s;
+        }
+        .portfolio a:hover {
+            color: #2980b9;
+            border-color: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            background: #2C3E50;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            margin-top: 3rem;
+            animation: fadeIn 1s ease-out 0.5s forwards;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .main-content, .image-container {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hemant Kushwaha</h1>
+    <p>Frontend Developer</p>
+</header>
+
+<div class="container">
+    <!-- Profile Image Section -->
+    <div class="image-container">
+        <img src="opt.jpg" alt="Hemant Kushwaha" class="profile-image">
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <!-- Profile Summary -->
+        <section class="profile-summary">
+            <h2 class="section-title">Profile Summary</h2>
+            <p>I am proficient in HTML, CSS, and JavaScript, and I am currently enhancing my skills in full-stack web development. I am passionate about building dynamic and user-friendly websites and am actively working to expand my knowledge in both front-end and back-end technologies.</p>
+        </section>
+
+        <!-- Key Skills -->
+        <section class="key-skills">
+            <h2 class="section-title">Key Skills</h2>
+            <div class="skills-item">HTML5, CSS3, JavaScript</div>
+            <div class="skills-item">React.js</div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <p>Check out my work on my <a href="https://github.com/hemant-kushwaha" target="_blank">GitHub Portfolio</a>.</p>
+        </section>
+
+        <!-- Address -->
+        <section class="address">
+            <h2 class="section-title">Address</h2>
+            <p>Mauranipur, District Jhansi, Uttar Pradesh, India.</p>
+        </section>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Hemant Kushwaha. All rights reserved.</p>
+</footer>
+
+<script>
+    // Adding fade-in animation to sections on page load
+    document.addEventListener("DOMContentLoaded", () => {
+        const fadeInElements = document.querySelectorAll(".fade-in");
+        fadeInElements.forEach((element, index) => {
+            element.style.animationDelay = `${index * 0.3}s`;
+        });
+    });
+</script>
+
+</body>
+</html>
